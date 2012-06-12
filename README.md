@@ -1,4 +1,4 @@
 twitter-newsConverter-view
 ==========================
 
-the view for the daily reads
+The view editor for previewing and modding the tweets pulled in in twitter-newsConverter
