@@ -63,7 +63,10 @@ $currentid = $row[0];
 		<b>Notes: </b><br/>
 <?php
 	$note_value = $row[7];
-	if($note_value=="")$note_value=$row[2];
+	if($note_value==""){
+		$note_value=$row[2];
+		echo "<div style='background-color:red;'>new</div>";
+	}
 ?>
 			<input id="notes" class="textField" name="inputfield" type="text" value="<?php echo $note_value;?>" />
 	</div>
