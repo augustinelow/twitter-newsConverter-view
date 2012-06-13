@@ -14,7 +14,7 @@ foreach($keys as $key){
 }
 $query_update_vars = substr($query_update_vars,0,strlen($query_update_vars)-1);
 
-$query = "update `contentlink` set ".$query_update_vars." where `id`=".$_REQUEST["id"];
+$query = "update `contentlink` set ".$query_update_vars.",updatedon=now() where `id`=".$_REQUEST["id"];
 $dbconnect = new DB_Class();
 $dbconnect->query($query);
 ?>

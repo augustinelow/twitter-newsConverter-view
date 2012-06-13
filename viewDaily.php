@@ -8,7 +8,7 @@ $dbconnect = new DB_Class();
 $query = "select "
 	."clink.articleTitle as text, clink.link as link, cat.category_name as category_name, clink.id as id, clink.notes as notes "
 	."from `contentlink` as clink inner join categories as cat on clink.category = cat.id "
-	."where createon >= '".date('Y-m-d').' 00:00:00'."' AND createon < '".date('Y-m-d').' 23:59:59'
+	."where updatedon >= '".date('Y-m-d').' 00:00:00'."' AND updatedon < '".date('Y-m-d').' 23:59:59'
 	."' order by cat.category_order asc";
 
 //echo $query;
