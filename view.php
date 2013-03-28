@@ -46,6 +46,7 @@ $currentid = $row[0];
 	echo "<div>";
 	echo "ID: <strong id='id'>".$row[0]."</strong>";
 	echo "<div><b>Tweet Title</b>: ".$row[1]."</div>";
+	echo "<div><b>Date </b>: ".$row[9]."</div>";
 ?>
 	<div>
 		<b>Article Title: </b><br/>

@@ -9,7 +9,7 @@ $query = "select "
 	."clink.articleTitle as text, clink.link as link, cat.category_name as category_name, clink.id as id, clink.notes as notes "
 	."from `contentlink` as clink inner join categories as cat on clink.category = cat.id "
 	."where updatedon >= '".date('Y-m-d').' 00:00:00'."' AND updatedon < '".date('Y-m-d').' 23:59:59'
-	."' order by cat.category_order asc";
+	."'and clink.category is not NULL order by cat.category_order asc";
 
 //echo $query;
 
